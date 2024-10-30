@@ -1,0 +1,89 @@
+
+<link rel="stylesheet" href="login.component.scss">
+
+<header>
+
+    <div class="Menu">
+
+        <div class="Div-name">
+            <a><h1 class="App-name">PARKING <span>APP</span></h1></a>
+        </div>
+
+        <nav class="Nav-bar">
+            <ul>
+                <!-- Botones -->
+                <li><a href="index.html" class="Boton-nav" >RP</a></li>
+                <li><a href="index.html" class="Boton-nav" >SERVICIOS</a></li>
+                <li><a href="index.html" class="Boton-nav" >PRECIOS</a></li>
+                <li><a href="index.html" class="Boton-nav" >UBICACION</a></li>
+                <li><a href="index.html" class="Boton-nav" >CONTACTO</a></li>
+                <li><a href="index.html" class="Boton-nav" >VOLVER</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+</header>
+
+
+<main>
+
+    <div class="Container">
+
+        <div class="Fondo-imagen">
+
+        </div>
+
+        <div class="Fondo-login">
+            <div class="Box-login">
+                <!-- TITULO -->
+                <a class="Titulo"><h1>LOGIN</h1></a>
+
+                <!-- LoginNombre y Apellido -->
+                <p>  Nombre y Apellido*</p>
+                <input class="Nombre" id="usuario" type="text" [(ngModel)]="datosLogin.username" name="usuario" placeholder="Ingrese su nombre completo..."/>
+
+                <!-- Login-Email -->
+                <p>  Email*</p>
+                <input class="Email" id="contraseña" type="email" [(ngModel)]="datosLogin.password" name="password" placeholder=" Ingrese su @email..."/>
+
+                <!-- Contraseña -->
+                <p>  Contraseña*</p>
+                <input class="Contraseña" type="password" placeholder=" Cree una nueva contraseña..."/>
+
+                <!-- Boton ingresar sesion -->
+                <button (click)="Login()" class="Boton-Login"> Iniciar sesión</button>
+                
+            </div>
+        </div>
+        
+    </div>
+
+</main>
+
+
+<footer>
+    <div class="div-footer-contacto">
+        <a><p class="Correo">conto-parking.com</p></a>
+
+        <a><p class="Direccion">Argentina / Rosario · Paraguay 1950</p></a>            
+    </div>
+
+    <nav class="nav-footer-links">
+        <a href="https://www.instagram.com/elias_persoglia/?next=%2F" class="boton-ig"> 
+            <img src="/Imagenes-Angular/Instagram_icon.png.webp">
+        </a>
+        <a href="https://www.facebook.com/profile.php?id=61563977987462&locale=es_LA" class="boton-fc"> 
+            <img src="/Imagenes-Angular/Facebook_logo_(square).png">
+        </a>
+        <a href="https://www.linkedin.com/in/elias-persoglia-8250a42a3/" class="boton-ln"> 
+            <img src="/Imagenes-Angular/linkedin-logo-linkedin-logo-transparent-linkedin-icon-transparent-free-free-png.webp">
+        </a>
+
+        <div class="nav-div-footer-news">
+            <a><p class="Newsletter">Suscribite al Newsletter!</p></a>
+
+            <input class="email" type="email" placeholder="email...">
+        </div>
+    </nav>
+</footer>

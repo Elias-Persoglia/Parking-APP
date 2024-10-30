@@ -1,0 +1,113 @@
+@use "./../../../../public/styles/colores.scss";
+
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    #top-left{
+        border-bottom: 7px colores.$color-principal solid;
+    
+        h1{
+            color: colores.$color-principal;
+            margin-left: 12%;
+            margin-bottom:2%;
+            width: 100%;
+        }
+    }
+    
+    #top-right{
+        display: flex;
+        flex-direction: row;
+
+        h2{
+            color:colores.$color-principal;
+            display: flex;
+            margin-top: 10%;
+            margin-right: 24px;
+            font-size: 150%;
+        
+        }
+        img{
+            height: 70%;
+            width: 60%;
+            margin-top: 20%;
+            margin-right: 40px;
+        }
+    }
+}
+
+
+#tabla{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 3%;
+    #header-tabla{
+        font-size: larger;
+        font-size: 220%;
+        text-align: center;
+        width: 100%;
+        
+    }
+    >div{
+        display: grid;
+        grid-template-columns: 15% 1fr 1fr 1fr;
+        border-bottom: 1px solid black;
+    }
+    .cuerpo-tabla{
+        font-size: 200%;
+        margin-top: 2%;
+        color: colores.$color-letra;
+        width: 100%;
+
+        div{
+            text-align: center;
+        }
+        img{
+            height: 32px;
+            width: 35px;
+        }
+
+        .disponible{
+            background-color:colores.$color-correcto;
+            text-align: center;
+            border-radius: 30px;
+            
+
+        }
+        .ocupado{
+            background-color:colores.$color-error;
+            text-align: center;
+            border-radius: 30px;
+        }
+    }
+
+    
+}
+#agregar{
+    display: flex;
+    border: none;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10%;
+
+    button{
+        border: none;
+        cursor: pointer;
+        background-color: colores.$color-letra-alternativo;
+
+        img{
+            height: 110%;
+            width: 60%;
+        }
+        
+    }
+}

@@ -1,0 +1,285 @@
+@use "./../../../../public/styles/colores.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: #0f0c0c27;
+    font-family: sans-serif;
+    height: 100vh;
+    width: 100vw;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+img{
+    max-width: 100%;
+}
+
+/*--------------------------------------------------------------------------------------------------------------------------------------*/
+
+header{
+    height: 70px;
+    background-size: cover;
+
+    .Menu{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        height: 70px;
+        max-width: 100%;
+        border: 20px 0;
+        background-color: #000000c1;
+
+        .Div-name{
+            display: flex;
+            align-items: center;
+            -moz-box-align: start;
+            height: 70px;
+            margin: 0 0 0 150px;
+
+            .App-name{
+                letter-spacing: 3px;
+                color:white;
+                span{
+                    color: rgb(255, 208, 0);
+                }
+            }
+            a{
+                height: fit-content;
+            }
+
+        }
+
+        .Nav-bar{
+            display: flex;
+            align-items: center;
+            -moz-box-align: end;
+            justify-content: space-between;
+            height: 70px;
+            padding: 0 150px 0 0;
+        }
+
+        .Nav-bar ul{
+            display: flex;
+            align-items: center;
+            padding: 0px;
+        }
+    
+        .Nav-bar ul li{
+            padding: 0 20px;
+            font-size: 14px;
+        }
+    
+        .Nav-bar ul li a{
+            color: #ffffff;
+            letter-spacing: 4px;            
+        }
+
+        .Nav-bar ul li a:hover{
+            text-shadow: 0 0 5px #ffffff;
+        }
+
+        label{
+            cursor: pointer;
+            display: none;
+        }
+
+        .Menu-logo{
+            width: 25px;
+        }
+    }
+   
+}
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+.Container{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    border-top: 2px solid white;
+    
+
+    .Fondo-imagen{
+        display: flex;
+        align-self: flex-start;
+        background-image: url(/Imagenes-Angular/imagen_parking.jpg);
+        background-color: #0c00f0ac;
+        width: 50vw;
+        height: 100vh;
+        background-size:contain;
+    }
+
+    .Fondo-login{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        background-color: #000000c1;
+        width: 50vw;
+        height: 100vh;
+
+        .Box-login{
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            width: 300px;
+            height: 400px;
+            margin-top: 160px;
+
+            .Titulo{
+                display: flex;
+                margin-bottom: 30px;
+                letter-spacing: 5px;
+                color: rgb(255, 208, 0);
+                font-size: 20px;
+            }
+            
+            p{
+                display: flex;
+                text-align: left;
+                color:#ffffff;
+                font-weight: 500;
+                font-size: 15px;
+                width: 300px;
+                height: 20px;
+                margin: 20px 0 0 0;
+            }
+
+            .Nombre{
+                display: flex;
+                width: 300px;
+                height: 30px;
+                border: 2px solid grey;
+                border-radius: 8px;
+    
+            }
+    
+            .Email{
+                display: flex;
+                width: 300px;
+                height: 30px;
+                border: 2px solid grey;
+                border-radius: 8px;
+            }
+            .Contraseña{
+                display: flex;
+                width: 300px;
+                height: 30px;
+                border: 2px solid grey;
+                border-radius: 8px;
+            }
+            .Boton-Login{
+                display: flex; 
+                color: #000000;
+                font-weight: 600;
+                padding: 12px 30px;
+                background-color: rgb(255, 208, 0);
+                border-radius: 10px;
+                margin-top: 30px;
+            }
+        }
+
+    }
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------------------*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-self:baseline;
+    align-self: center;
+    height: 150px;
+    width: 100vw;
+    border-top: 2px solid white ;
+    color: white;
+    // background-color: #0f0c0c;
+    background-color: #000000c1;
+    
+
+
+    .div-footer-contacto{
+        display: flex;
+        flex-direction: row;
+        align-self: center;
+        height: 75px;
+        width: 1200px;
+    }
+
+    .Correo{
+        display: flex;
+        align-self: flex-start;
+        height: 45px;
+        width: 600px;
+        padding: 30px 0px 0px 0px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .Direccion{
+        display: flex;
+        height: 45px;
+        width: 228px;
+        padding: 30px 0px 0px 372px;
+        margin: 0px 0px 0px 0px;
+    }
+
+    .nav-footer-links{
+        display: flex;
+        flex-direction: row;
+        align-self:auto;
+        align-self: center;
+        align-items: center;
+        height: 75px;
+        width: 1200px;
+        padding: 0px ;
+
+        .div-nav-footer-new{
+            display: flex;
+            flex-direction: column;
+            border: 0px;
+            padding-left: 713px;
+        }
+    }
+
+    .Newsletter{
+        display: flex;
+        height: 20px;
+        width: 200px;
+        margin: 5px 0px 5px 0px;
+
+    }
+
+    .email{
+        display: flex;
+        height: 20px;
+        width: 300px;
+        border-radius: 5px;
+    }
+
+    .boton-ig{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        padding: 0px 20px 0px 0px;
+    }
+
+    .boton-fc{
+        display: flex;
+        height: 40px;
+        width: 40px;
+        padding: 0px 15px 0px 0px;
+    }
+
+    .boton-ln{
+        display: flex;
+        height: 55px;
+        width: 55px;
+        padding: 0px 730px 0px 0px;
+    }
+}
+
